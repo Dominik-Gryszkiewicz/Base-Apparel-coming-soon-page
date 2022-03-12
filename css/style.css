@@ -489,11 +489,13 @@ body {
   .container .flex-container1 {
     padding: 80px 200px 70px 150px;
   }
+  .container .flex-container1 .img-container__logo {
+    width: 36%;
+  }
   .container .flex-container1 .content {
     margin-top: 140px;
   }
   .container .flex-container1 .content__tittle {
-    font-size: 74px;
     letter-spacing: 19px;
   }
   .container .flex-container1 .content__description {
