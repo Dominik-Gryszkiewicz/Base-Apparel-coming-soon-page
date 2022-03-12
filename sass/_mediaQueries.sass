@@ -2,7 +2,7 @@
     .container
         .img-container
             &__logo
-                width: 25%
+                width: 27%
                 margin: 20px 25px
         .hero-mobile
             &__img
@@ -78,19 +78,37 @@
         .img-container
             &__logo
                 width: 20%
-                margin: 40px 55px
+                margin: 25px 55px
         .hero-mobile
             &__img
                 height: 40vh
         .content
-            padding: 60px 150px
+            padding: 55px 150px
             &__tittle
                 font-size: 58px
             &__description
                 font-size: 18px
             &__form
+                margin-top: 30px
+                margin-right: 10px
+                margin-left: 10px
                 &-button
                     padding: 13px 30px
+                &-input
+                    &::placeholder
+                        font-size: 14px
+                &-icon-error
+                    img
+                        width: 80%
+            .error-info
+                font-size: 13px
+
+@media screen and ( min-height: 1080px)
+    .container
+        .content
+            padding: 70px 150px
+            &__form
+                margin-top: 50px
 
 @media screen and ( min-height: 1280px) and (min-width: 800px)
     .container
@@ -101,9 +119,190 @@
             &__description
                 font-size: 20px
             &__form
+                margin-top: 50px
                 &-button
                     padding: 16px 32px
                 &-input
                     padding-left: 30px
                     &::placeholder
                         font-size: 16px
+            .error-info
+                font-size: 15px
+
+@media screen and ( min-width: 600px)
+    .container
+        .content
+            &__form
+                &-input
+                    width: 75%
+
+@media screen and ( min-width: 900px)
+    .container
+        display: flex
+        justify-content: space-between
+        .flex-container1
+            flex-basis: 57%
+            padding: 50px 130px 50px 90px
+            background-image: url('../images/bg-pattern-desktop.svg')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: left bottom
+            .img-container
+                &__logo
+                    width: 38%
+                    margin: 0
+            .hero-mobile
+                &__img
+                    display: none
+            .content
+                text-align: left
+                padding: 0
+                margin-top: 90px
+                &__tittle
+                    font-size: 50px
+                    letter-spacing: 11px
+                &__description
+                    font-size: 14px
+                    margin-top: 25px
+                &__form
+                    margin-top: 35px
+                    &-input
+                        width: 68%
+                    &-button
+                        padding: 9px 29px
+            .error-info
+                font-size: 12px
+        .flex-container2
+            flex-basis: 43%
+            .hero-desktop
+                height: 100%
+                &__img
+                    display: block
+
+@media screen and ( min-width: 900px) and ( min-height: 1024px)
+    .container
+        .flex-container1
+            flex-basis: 50%
+            padding: 60px 110px 50px 80px
+            .img-container
+                &__logo
+                    width: 45%
+            .content
+                margin-top: 150px
+                &__tittle
+                    font-size: 60px
+                &__description
+                    font-size: 16px
+                    margin-top: 50px
+                    line-height: 180%
+                    padding: 0
+                &__form
+                    margin-top: 250px
+                    &-button
+                        padding: 10px 29px
+        .flex-container2
+            flex-basis: 50%
+
+@media screen and ( min-width: 1024px)
+    .container
+        .flex-container1
+            padding: 60px 190px 60px 140px
+            .img-container
+                &__logo
+                    width: 39%
+            .content
+                margin-top: 110px
+                &__tittle
+                    font-size: 65px
+                &__description
+                    font-size: 16px
+                &__form
+                    &-button
+                        padding: 13px 36px
+
+@media screen and ( min-width: 1366px)
+    .container
+        .flex-container1
+            padding: 70px 210px 70px 150px
+            .img-container
+                &__logo
+                    width: 41%
+            .content
+                margin-top: 120px
+                &__tittle
+                    font-size: 67px
+                &__form
+                    margin-top: 40px
+
+@media screen and ( min-width: 1440px)
+    .container
+        .flex-container1
+            padding: 80px 200px 70px 150px
+            .content
+                margin-top: 140px
+                &__tittle
+                    font-size: 74px
+                    letter-spacing: 19px
+                &__description
+                    font-size: 17px
+                    margin-top: 30px
+                &__form
+                    &-input
+                        padding-left: 30px
+                        &::placeholder
+                            font-size: 15px
+                    &-button
+                        padding: 14px 37px
+
+@media screen and ( min-width: 1536px)
+    .container
+        .flex-container1
+            padding: 80px 220px 70px 150px
+            .img-container
+                &__logo
+                    width: 36%
+
+@media screen and ( min-width: 1920px)
+    .container
+        .flex-container1
+            padding: 90px 320px 90px 200px
+            .img-container
+                &__logo
+                    width: 35%
+            .content
+                margin-top: 180px
+                &__tittle
+                    font-size: 94px
+                    letter-spacing: 24px
+                &__description
+                    font-size: 22px
+                    margin-top: 40px
+                    padding: 0
+                &__form
+                    margin-top: 60px
+                    margin-left: 0
+                    margin-right: 0
+                    &-input
+                        padding-left: 30px
+                        width: 75%
+                    &-icon-error
+                        img
+                            width: 90%
+                        &::placeholder
+                            font-size: 18px
+                    &-button
+                        padding: 19px 44px
+            .error-info
+                font-size: 15px
+                margin-top: 15px
+                margin-left: 30px
+
+@media screen and (min-width: 2000px)
+    .container
+        .flex-container1
+            padding: 80px 320px 80px 200px
+            flex-basis: 50%
+            .content
+                margin-top: 160px
+        .flex-container2
+            flex-basis: 50%
