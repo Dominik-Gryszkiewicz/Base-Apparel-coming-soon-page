@@ -88,6 +88,10 @@ body {
   width: 65%;
 }
 
+.container .content__form-input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
 .container .content__form-input::-webkit-input-placeholder {
   font-family: 'Josefin Sans', sans-serif;
   color: #ce9797;
